@@ -1,0 +1,43 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: UTF-8
+  servlet.context-path: /reverce
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active:
+      - dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reverce?serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+mybatis:  #mybatyis的配置
+  mapper-locations: classpath:mapper/*.xml #指定mapper的配置文件的路径是mapper文件夹下的所有 xml文件。
+  config-location: classpath:mybatis-config.xml
+
+
+
+swagger:
+  enabled: true
+  title: api
+  description: desc for swagger2
+  license: Apache License, Version 2.0
+  license-url: https://www.apache.org/licenses/LICENSE-2.0.html
+  terms-of-service-url: https://github.com/pbw123/spring-boot-demo
+  contact:
+    name: zlx
+    url: 123
+    email: 1170762202@qq.com
+  base-package: com.zlx.reverce.controller
+  base-path: /**
+  exclude-path: /error, /ops/**
