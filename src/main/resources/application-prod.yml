@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://123.56.25.255:3306/huxiao?serverTimezone=UTC
+    username: huxiao
+    password: FDw5ndLZYEyYEixh
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect

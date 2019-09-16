@@ -1225,3 +1225,72 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-09-16 16:38:00.288  INFO 8688 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-09-16 16:38:00.288  INFO 8688 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-09-16 16:38:00.302  INFO 8688 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-09-16 17:29:50.558  INFO 12108 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on Z3X9CSF9XM4HM49 with PID 12108 (D:\IdeaProjects\reverce\target\classes started by Administrator in D:\IdeaProjects\reverce)
+2019-09-16 17:29:50.561  INFO 12108 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-16 17:29:51.428  INFO 12108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 17:29:51.450  INFO 12108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-09-16 17:29:51.764  INFO 12108 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ce9f720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 17:29:52.190  INFO 12108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-16 17:29:52.211  INFO 12108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-16 17:29:52.211  INFO 12108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-16 17:29:52.217  INFO 12108 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-09-16 17:29:52.217  INFO 12108 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-09-16 17:29:52.217  INFO 12108 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-09-16 17:29:52.217  INFO 12108 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-09-16 17:29:52.221  INFO 12108 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-09-16 17:29:52.332  INFO 12108 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-16 17:29:52.332  INFO 12108 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1725 ms
+2019-09-16 17:29:52.605  INFO 12108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-16 17:29:53.122  INFO 12108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-16 17:29:53.155  INFO 12108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-16 17:29:53.205  INFO 12108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-16 17:29:53.206  INFO 12108 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-16 17:29:53.307  INFO 12108 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-16 17:29:53.425  INFO 12108 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-16 17:29:53.637  INFO 12108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 17:29:54.380  WARN 12108 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-16 17:29:54.630  INFO 12108 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-16 17:29:54.920  INFO 12108 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 17:29:55.303  INFO 12108 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-16 17:29:55.316  INFO 12108 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-16 17:29:55.341  INFO 12108 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-16 17:29:55.457  INFO 12108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-16 17:29:55.460  INFO 12108 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 5.298 seconds (JVM running for 5.978)
+2019-09-16 17:30:04.507  INFO 12108 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-16 17:30:04.507  INFO 12108 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-16 17:30:04.518  INFO 12108 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-16 18:03:56.618  INFO 10712 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on Z3X9CSF9XM4HM49 with PID 10712 (D:\IdeaProjects\reverce\target\classes started by Administrator in D:\IdeaProjects\reverce)
+2019-09-16 18:03:56.621  INFO 10712 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-16 18:03:57.459  INFO 10712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-16 18:03:57.481  INFO 10712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-09-16 18:03:57.820  INFO 10712 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fda8802] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-16 18:03:58.278  INFO 10712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-16 18:03:58.301  INFO 10712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-16 18:03:58.301  INFO 10712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-16 18:03:58.307  INFO 10712 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-09-16 18:03:58.307  INFO 10712 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-09-16 18:03:58.308  INFO 10712 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-09-16 18:03:58.308  INFO 10712 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-09-16 18:03:58.312  INFO 10712 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-09-16 18:03:58.421  INFO 10712 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-16 18:03:58.421  INFO 10712 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1753 ms
+2019-09-16 18:03:58.650  INFO 10712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-16 18:03:59.130  INFO 10712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-16 18:03:59.164  INFO 10712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-16 18:03:59.213  INFO 10712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-16 18:03:59.214  INFO 10712 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-16 18:03:59.315  INFO 10712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-16 18:03:59.428  INFO 10712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-16 18:03:59.597  INFO 10712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-16 18:04:00.348  WARN 10712 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-16 18:04:00.562  INFO 10712 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-16 18:04:00.850  INFO 10712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-16 18:04:01.242  INFO 10712 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-16 18:04:01.255  INFO 10712 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-16 18:04:01.279  INFO 10712 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-16 18:04:01.393  INFO 10712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-16 18:04:01.396  INFO 10712 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 5.153 seconds (JVM running for 5.837)
