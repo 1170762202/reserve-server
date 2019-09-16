@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlx.reverce.test.mapper.TUserMapper">
+    <insert id="insertUser" parameterType="com.zlx.reverce.entity.TUser">
+        insert into t_user(name,account,password)value(#{user.name},#{user.account},#{user.password})
+    </insert>
+</mapper>
