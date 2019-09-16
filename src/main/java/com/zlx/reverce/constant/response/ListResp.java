@@ -3,18 +3,18 @@ package com.zlx.reverce.constant.response;
 import java.util.List;
 import java.util.Map;
 
-public class ListResp {
-    private List<Map> list;
+public class ListResp<T> {
+    private List<T> list;
 
-    public ListResp(List<Map> list) {
+    public ListResp(List<T> list) {
         this.list = list;
     }
 
-    public List<Map> getList() {
+    public List<T> getList() {
         return list;
     }
 
-    public void setList(List<Map> list) {
+    public void setList(List<T> list) {
         this.list = list;
     }
 }

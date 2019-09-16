@@ -12,7 +12,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 @SpringBootApplication
-@MapperScan("com.zlx.reverce")
+@MapperScan("com.zlx.reverce.mapper")
 @EnableSwagger2Doc
 public class ReverceApplication {
 
