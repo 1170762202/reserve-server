@@ -32,8 +32,11 @@ budget VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '预算',
 create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
 PRIMARY KEY ( id ) 
 );
-INSERT INTO t_user ( id, NAME, account, PASSWORD )
-VALUES
-	( "1", "1", "1", "1" ),
-	( "2", "2", "2", "2" ),
-	( "3", "3", "3", "3" )
+DROP TABLE IF EXISTS t_condition;
+
+CREATE TABLE t_condition (
+id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
+type INTEGER ( 10 ) NOT NULL DEFAULT 0 COMMENT '类型',
+value VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '值',
+PRIMARY KEY ( id )
+);

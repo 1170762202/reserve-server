@@ -24,11 +24,28 @@ public class ReturnUtil {
         return map;
     }
 
+    public static <T> Map<String, Object> returnSuccess(T data) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", ResponseCode.success.getCode());
+        map.put("message", ResponseCode.success.getMessage());
+        map.put("data", data);
+        return map;
+    }
+
     public static Map<String, Object> returnSuccess(ResponseCode responseCode) {
         Map<String, Object> map = new HashMap<>();
         map.put("code", responseCode.getCode());
         map.put("message", responseCode.getMessage());
         map.put("data", null);
         return map;
+    }
+
+
+    public static <T> Map<String, Object> returnMap(boolean success) {
+        if (success) {
+            return returnSuccess(ResponseCode.success);
+        } else {
+            return returnSuccess(ResponseCode.failed);
+        }
     }
 }

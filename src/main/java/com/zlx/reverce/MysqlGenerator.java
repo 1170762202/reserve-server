@@ -29,24 +29,29 @@ public class MysqlGenerator {
      * 读取控制台内容
      * </p>
      */
-    public static String scanner(String tip) {
-        Scanner scanner = new Scanner(System.in);
-        StringBuilder help = new StringBuilder();
-        help.append("请输入" + tip + "：");
-        System.out.println(help.toString());
-        if (scanner.hasNext()) {
-            String ipt = scanner.next();
-            if (StringUtils.isNotEmpty(ipt)) {
-                return ipt;
-            }
-        }
-        throw new MybatisPlusException("请输入正确的" + tip + "！");
-    }
+//    public static String scanner(String tip) {
+//        Scanner scanner = new Scanner(System.in);
+//        StringBuilder help = new StringBuilder();
+//        help.append("请输入" + tip + "：");
+//        System.out.println(help.toString());
+//        if (scanner.hasNext()) {
+//            String ipt = scanner.next();
+//            if (StringUtils.isNotEmpty(ipt)) {
+//                return ipt;
+//            }
+//        }
+//        throw new MybatisPlusException("请输入正确的" + tip + "！");
+//    }
+
 
     /**
      * RUN THIS
      */
     public static void main(String[] args) {
+        generator("t_case","t_case");
+    }
+
+    private static void generator(String moduleName, String tableName) {
         // 代码生成器
         AutoGenerator mpg = new AutoGenerator();
 
@@ -70,7 +75,7 @@ public class MysqlGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName(scanner("模块名"));
+        pc.setModuleName(moduleName);
         pc.setParent("com.zlx.reverce");
         pc.setController("controller");
         pc.setService("service");
@@ -104,10 +109,10 @@ public class MysqlGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("com.example.mybatisplus.entity.BaseEntity");
+        strategy.setSuperEntityClass("com.zlx.reverce.entity.BaseEntity");
         strategy.setEntityLombokModel(true);
 //        strategy.setSuperControllerClass("com.baomidou.mybatisplus.samples.generator.common.BaseController");
-        strategy.setInclude(scanner("表名"));
+        strategy.setInclude(tableName);
         strategy.setSuperEntityColumns("id");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
@@ -116,5 +121,4 @@ public class MysqlGenerator {
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
     }
-
 }
