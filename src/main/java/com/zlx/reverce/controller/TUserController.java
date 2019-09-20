@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.segments.MergeSegments;
 import com.baomidou.mybatisplus.extension.service.additional.AbstractChainWrapper;
 import com.zlx.reverce.annotation.LimitKey;
+import com.zlx.reverce.annotation.SecretAnnotation;
 import com.zlx.reverce.annotation.UserLoginToken;
 import com.zlx.reverce.constant.ResponseCode;
 import com.zlx.reverce.constant.ReturnUtil;
@@ -18,6 +19,7 @@ import com.zlx.reverce.service.ITUserService;
 import com.zlx.reverce.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
@@ -46,11 +48,13 @@ public class TUserController {
     @Autowired
     ITUserInfoService itUserInfoService;
 
-    @PostMapping("/login")
-    Object login(String account, String password) {
+    @PostMapping(value = "/login")
+//    @SecretAnnotation(encode = true, decode = true)
+    Object login(TUser user) {
+        System.out.println("login:" + JSON.toJSONString(user));
         QueryWrapper<TUser> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("account", account)
-                .eq("password", password);
+        queryWrapper.eq("account", user.getAccount())
+                .eq("password", user.getPassword());
         TUser tUser = itUserService.getOne(queryWrapper);
         if (tUser == null) {
             return ReturnUtil.returnFail(null);

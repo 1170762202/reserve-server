@@ -2,11 +2,14 @@ package com.zlx.reverce.controller;
 
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.zlx.reverce.constant.ResponseCode;
 import com.zlx.reverce.constant.ReturnUtil;
 import com.zlx.reverce.constant.response.ListResp;
 import com.zlx.reverce.entity.TOrder;
+import com.zlx.reverce.entity.TSundryInfo;
 import com.zlx.reverce.service.ITOrderService;
+import com.zlx.reverce.service.ITSundryInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,9 +32,24 @@ public class TOrderController {
     @Autowired
     ITOrderService itOrderService;
 
+    @Autowired
+    ITSundryInfoService itSundryInfoService;
+
+
     @PostMapping("/insertOrder")
     Object insertOrder(String reservePhone, String address, String joinNumber, String reserveType, String budget,
-                       Long startDate, Long endDate) {
+                       Long startDate, Long endDate,String mobileCode) {
+        QueryWrapper<TSundryInfo> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("mobile", reservePhone);
+        queryWrapper.eq("mobileCode", mobileCode);
+        TSundryInfo one = itSundryInfoService.getOne(queryWrapper);
+        if (one == null) {
+            return ReturnUtil.returnFail("请获取验证码");
+        }
+        Date createTime = one.getCreateTime();
+        long between = (new Date().getTime() - createTime.getTime()) / 1000;//秒
+
+
         TOrder tOrder = new TOrder();
         tOrder.setReservePhone(reservePhone);
         tOrder.setAddress(address);
@@ -52,6 +70,7 @@ public class TOrderController {
 
     @PostMapping("/deleteOrderById")
     Object deleteOrderById(String orderId) {
+        System.out.println("deleteOrderById:" + orderId);
         boolean b = itOrderService.removeById(orderId);
         return ReturnUtil.returnSuccess(b ? ResponseCode.success : ResponseCode.failed);
 

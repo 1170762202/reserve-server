@@ -48,7 +48,7 @@ public class MysqlGenerator {
      * RUN THIS
      */
     public static void main(String[] args) {
-        generator("t_case","t_case");
+        generator("t_sundry_info","t_sundry_info");
     }
 
     private static void generator(String moduleName, String tableName) {
