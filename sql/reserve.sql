@@ -32,11 +32,76 @@ budget VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '预算',
 create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
 PRIMARY KEY ( id ) 
 );
-DROP TABLE IF EXISTS t_condition;
-
+DROP TABLE
+IF
+	EXISTS t_condition;
 CREATE TABLE t_condition (
 id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
 type INTEGER ( 10 ) NOT NULL DEFAULT 0 COMMENT '类型',
-value VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '值',
+
+VALUE
+	VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '值',
+	PRIMARY KEY ( id )
+	);
+
+DROP TABLE IF EXISTS t_address_info;
+CREATE TABLE t_address_info (
+	id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
+	address_name VARCHAR ( 50 ) NOT NULL DEFAULT 0 COMMENT '名字',
+	address_description VARCHAR ( 100 ) NOT NULL DEFAULT 0 COMMENT '描述',
+	address_image VARCHAR ( 100 ) NOT NULL DEFAULT 0 COMMENT '图片logo',
+	address_level VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '等级',
+	address_room_number VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '房间数量',
+	address_area_size VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '场地面积',
+	address_capacity VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '场地容量(人数)',
+	address_outside_park_number VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '室外场地容量(人数)',
+	address_inside_park_number VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '室内场地容量(人数)',
+	create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
 PRIMARY KEY ( id )
+);
+
+DROP TABLE IF EXISTS t_address_room_info;
+CREATE TABLE t_address_room_info (
+id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
+address_id VARCHAR (255) NOT NULL COMMENT '地址id',
+room_name VARCHAR ( 50 ) NOT NULL DEFAULT 0 COMMENT '名字',
+room_description VARCHAR ( 100 ) NOT NULL DEFAULT 0 COMMENT '描述',
+room_image VARCHAR ( 10000 ) NOT NULL DEFAULT 0 COMMENT '图片logo',
+room_area_size VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '场地面积',
+room_capacity VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '场地容量(人数)',
+create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+PRIMARY KEY ( id )
+);
+
+CREATE TABLE t_address_room_info (
+id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
+address_id VARCHAR (255) NOT NULL COMMENT '地址id',
+room_name VARCHAR ( 50 ) NOT NULL DEFAULT 0 COMMENT '名字',
+room_description VARCHAR ( 100 ) NOT NULL DEFAULT 0 COMMENT '描述',
+room_image VARCHAR ( 10000 ) NOT NULL DEFAULT 0 COMMENT '图片logo',
+room_area_size VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '场地面积',
+room_capacity VARCHAR ( 50 ) NULL DEFAULT NULL COMMENT '场地容量(人数)',
+create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+PRIMARY KEY ( id )
+);
+
+DROP TABLE IF EXISTS t_case;
+CREATE TABLE t_case (
+id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
+case_name VARCHAR ( 255 ) NOT NULL COMMENT '案例名字',
+create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+PRIMARY KEY ( id )
+);
+
+DROP TABLE IF EXISTS t_case_info;
+CREATE TABLE t_case_info (
+id VARCHAR ( 255 ) NOT NULL COMMENT '主键ID',
+case_id VARCHAR (255) NOT NULL COMMENT '案例id',
+case_info_name VARCHAR ( 255 ) NOT NULL COMMENT '案例名字',
+case_info_description VARCHAR ( 100 ) NOT NULL DEFAULT 0 COMMENT '描述',
+case_info_image VARCHAR ( 10000 ) NOT NULL DEFAULT 0 COMMENT '案例图片',
+create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+PRIMARY KEY ( id )
+);
+
 );
