@@ -3747,3 +3747,331 @@
 2019-09-20 16:58:16.613  INFO 12920 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-09-20 16:58:16.613  INFO 12920 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-09-20 16:58:16.626  INFO 12920 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-21 17:08:16.028  INFO 2864 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 2864 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 17:08:16.030  INFO 2864 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 17:08:17.796  INFO 2864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 17:08:17.828  INFO 2864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-09-21 17:08:18.192  INFO 2864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$949f26c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 17:08:18.660  INFO 2864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 17:08:18.683  INFO 2864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 17:08:18.683  INFO 2864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 17:08:18.854  INFO 2864 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 17:08:18.854  INFO 2864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2785 ms
+2019-09-21 17:08:19.137  INFO 2864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 17:08:19.686  INFO 2864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 17:08:19.733  INFO 2864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 17:08:19.825  INFO 2864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 17:08:19.827  INFO 2864 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 17:08:20.030  INFO 2864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 17:08:20.509  INFO 2864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 17:08:20.799  INFO 2864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:08:21.942  WARN 2864 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 17:08:22.210  INFO 2864 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 17:08:22.479  INFO 2864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:08:22.559  INFO 2864 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 17:08:22.886  INFO 2864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 17:08:22.905  INFO 2864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 17:08:22.934  INFO 2864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 17:08:23.038  INFO 2864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 17:08:23.040  INFO 2864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 17:08:23.045  INFO 2864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 17:08:23.047  INFO 2864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 17:08:23.051  INFO 2864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 17:08:23.053  INFO 2864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 17:08:23.141  INFO 2864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 17:08:23.146  INFO 2864 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 7.979 seconds (JVM running for 9.731)
+2019-09-21 17:11:26.028  INFO 2864 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 17:11:26.028  INFO 2864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 17:11:26.043  INFO 2864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-09-21 17:11:26.206  WARN 2864 --- [http-nio-8088-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-09-21 17:11:38.258  WARN 2864 --- [http-nio-8088-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-09-21 17:11:57.282  WARN 2864 --- [http-nio-8088-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2019-09-21 17:12:14.313  INFO 5872 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 5872 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 17:12:14.316  INFO 5872 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 17:12:16.010  INFO 5872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 17:12:16.049  INFO 5872 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-09-21 17:12:16.581  INFO 5872 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28eb4a26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 17:12:17.332  INFO 5872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 17:12:17.360  INFO 5872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 17:12:17.361  INFO 5872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 17:12:17.518  INFO 5872 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 17:12:17.518  INFO 5872 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3126 ms
+2019-09-21 17:12:17.963  INFO 5872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 17:12:18.472  INFO 5872 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 17:12:18.520  INFO 5872 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 17:12:18.610  INFO 5872 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 17:12:18.612  INFO 5872 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 17:12:18.860  INFO 5872 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 17:12:19.101  INFO 5872 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 17:12:19.362  INFO 5872 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:12:20.884  WARN 5872 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 17:12:21.172  INFO 5872 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 17:12:21.484  INFO 5872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:12:21.578  INFO 5872 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 17:12:21.989  INFO 5872 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 17:12:22.009  INFO 5872 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 17:12:22.040  INFO 5872 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 17:12:22.162  INFO 5872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 17:12:22.163  INFO 5872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 17:12:22.167  INFO 5872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 17:12:22.170  INFO 5872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 17:12:22.176  INFO 5872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 17:12:22.178  INFO 5872 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 17:12:22.293  INFO 5872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 17:12:22.296  INFO 5872 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 8.584 seconds (JVM running for 10.076)
+2019-09-21 17:12:57.958  INFO 5872 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 17:12:57.959  INFO 5872 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 17:12:57.976  INFO 5872 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-09-21 17:14:27.623  INFO 5076 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 5076 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 17:14:27.625  INFO 5076 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 17:14:28.637  INFO 5076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 17:14:28.671  INFO 5076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-09-21 17:14:29.134  INFO 5076 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f3c2856] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 17:14:29.673  INFO 5076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 17:14:29.697  INFO 5076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 17:14:29.697  INFO 5076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 17:14:29.926  INFO 5076 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 17:14:29.926  INFO 5076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2256 ms
+2019-09-21 17:14:30.141  INFO 5076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 17:14:30.528  INFO 5076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 17:14:30.577  INFO 5076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 17:14:30.670  INFO 5076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 17:14:30.672  INFO 5076 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 17:14:30.888  INFO 5076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 17:14:31.094  INFO 5076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 17:14:31.382  INFO 5076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:14:32.595  WARN 5076 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 17:14:32.867  INFO 5076 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 17:14:33.200  INFO 5076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:14:33.312  INFO 5076 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 17:14:33.782  INFO 5076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 17:14:33.815  INFO 5076 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 17:14:33.867  INFO 5076 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 17:14:34.024  INFO 5076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 17:14:34.026  INFO 5076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 17:14:34.033  INFO 5076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 17:14:34.035  INFO 5076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 17:14:34.040  INFO 5076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 17:14:34.042  INFO 5076 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 17:14:34.420  INFO 5076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 17:14:34.424  INFO 5076 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 7.813 seconds (JVM running for 10.653)
+2019-09-21 17:14:36.715  INFO 5076 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 17:14:36.716  INFO 5076 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 17:14:36.729  INFO 5076 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-21 17:17:31.827  INFO 5076 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:17:31.832  INFO 5076 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:17:31.837  INFO 5076 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-21 17:17:31.864  INFO 5076 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-21 17:17:40.693  INFO 12240 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 12240 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 17:17:40.696  INFO 12240 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 17:17:42.060  INFO 12240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 17:17:42.131  INFO 12240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2019-09-21 17:17:42.980  INFO 12240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11965665] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 17:17:43.790  INFO 12240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 17:17:43.819  INFO 12240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 17:17:43.820  INFO 12240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 17:17:44.204  INFO 12240 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 17:17:44.205  INFO 12240 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3444 ms
+2019-09-21 17:17:44.641  INFO 12240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 17:17:45.228  INFO 12240 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 17:17:45.403  INFO 12240 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 17:17:45.781  INFO 12240 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 17:17:45.785  INFO 12240 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 17:17:46.062  INFO 12240 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 17:17:46.279  INFO 12240 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 17:17:46.631  INFO 12240 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:17:48.297  WARN 12240 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 17:17:48.803  INFO 12240 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 17:17:49.468  INFO 12240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:17:49.576  INFO 12240 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 17:17:50.061  INFO 12240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 17:17:50.093  INFO 12240 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 17:17:50.155  INFO 12240 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 17:17:50.353  INFO 12240 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 17:17:50.355  INFO 12240 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 17:17:50.362  INFO 12240 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 17:17:50.365  INFO 12240 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 17:17:50.379  INFO 12240 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 17:17:50.387  INFO 12240 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 17:17:50.924  INFO 12240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 17:17:50.929  INFO 12240 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 11.952 seconds (JVM running for 13.856)
+2019-09-21 17:37:30.678  INFO 12240 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 17:37:30.679  INFO 12240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 17:37:30.740  INFO 12240 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 61 ms
+2019-09-21 17:38:57.177  INFO 12240 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:38:57.179  INFO 12240 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:38:57.191  INFO 12240 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-21 17:38:57.203  INFO 12240 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-21 17:39:07.788  INFO 3092 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 3092 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 17:39:07.795  INFO 3092 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 17:39:09.635  INFO 3092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 17:39:09.689  INFO 3092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-09-21 17:39:10.235  INFO 3092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbac6f4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 17:39:10.832  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 17:39:10.862  INFO 3092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 17:39:10.862  INFO 3092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 17:39:11.131  INFO 3092 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 17:39:11.132  INFO 3092 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3228 ms
+2019-09-21 17:39:11.396  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 17:39:11.926  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 17:39:11.992  INFO 3092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 17:39:12.158  INFO 3092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 17:39:12.161  INFO 3092 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 17:39:12.411  INFO 3092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 17:39:12.667  INFO 3092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 17:39:13.017  INFO 3092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 17:39:14.426  WARN 3092 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 17:39:14.895  INFO 3092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 17:39:15.388  INFO 3092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 17:39:15.537  INFO 3092 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 17:39:16.007  INFO 3092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 17:39:16.061  INFO 3092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 17:39:16.109  INFO 3092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 17:39:16.521  INFO 3092 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 17:39:16.523  INFO 3092 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 17:39:16.527  INFO 3092 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 17:39:16.528  INFO 3092 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 17:39:16.534  INFO 3092 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 17:39:16.535  INFO 3092 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 17:39:16.620  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 17:39:16.625  INFO 3092 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 10.168 seconds (JVM running for 11.719)
+2019-09-21 17:39:21.503  INFO 3092 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 17:39:21.503  INFO 3092 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 17:39:21.524  INFO 3092 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-09-21 18:19:21.066  INFO 3092 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:19:21.070  INFO 3092 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:19:21.078  INFO 3092 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-21 18:19:21.094  INFO 3092 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-21 18:19:32.474  INFO 11156 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 11156 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 18:19:32.478  INFO 11156 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 18:19:33.797  INFO 11156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 18:19:33.850  INFO 11156 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 0 repository interfaces.
+2019-09-21 18:19:34.424  INFO 11156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3aa52aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 18:19:35.033  INFO 11156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 18:19:35.060  INFO 11156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 18:19:35.061  INFO 11156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 18:19:35.306  INFO 11156 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 18:19:35.306  INFO 11156 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2769 ms
+2019-09-21 18:19:35.532  INFO 11156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 18:19:35.973  INFO 11156 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 18:19:36.022  INFO 11156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 18:19:36.119  INFO 11156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 18:19:36.121  INFO 11156 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 18:19:36.365  INFO 11156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 18:19:36.600  INFO 11156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 18:19:37.087  INFO 11156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:19:38.414  WARN 11156 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 18:19:38.700  INFO 11156 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 18:19:39.043  INFO 11156 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:19:39.154  INFO 11156 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 18:19:39.552  INFO 11156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 18:19:39.573  INFO 11156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 18:19:39.615  INFO 11156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 18:19:40.048  INFO 11156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 18:19:40.056  INFO 11156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 18:19:40.070  INFO 11156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 18:19:40.075  INFO 11156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 18:19:40.089  INFO 11156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 18:19:40.091  INFO 11156 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 18:19:40.241  INFO 11156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 18:19:40.254  INFO 11156 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 8.657 seconds (JVM running for 9.974)
+2019-09-21 18:20:29.000  INFO 11156 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 18:20:29.001  INFO 11156 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 18:20:29.024  INFO 11156 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-09-21 18:22:41.704  INFO 11156 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:22:41.707  INFO 11156 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:22:41.711  INFO 11156 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-21 18:22:41.728  INFO 11156 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-21 18:22:48.932  INFO 11180 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 11180 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 18:22:48.937  INFO 11180 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 18:22:50.393  INFO 11180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 18:22:50.428  INFO 11180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-09-21 18:22:50.907  INFO 11180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f620da6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 18:22:51.477  INFO 11180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 18:22:51.502  INFO 11180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 18:22:51.502  INFO 11180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 18:22:51.736  INFO 11180 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 18:22:51.736  INFO 11180 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2707 ms
+2019-09-21 18:22:51.975  INFO 11180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 18:22:52.349  INFO 11180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 18:22:52.395  INFO 11180 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 18:22:52.489  INFO 11180 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 18:22:52.491  INFO 11180 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 18:22:52.826  INFO 11180 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 18:22:53.090  INFO 11180 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 18:22:53.375  INFO 11180 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:22:54.614  WARN 11180 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 18:22:54.895  INFO 11180 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 18:22:55.254  INFO 11180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:22:55.366  INFO 11180 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 18:22:55.874  INFO 11180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 18:22:55.908  INFO 11180 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 18:22:55.965  INFO 11180 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 18:22:56.391  INFO 11180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 18:22:56.393  INFO 11180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 18:22:56.397  INFO 11180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 18:22:56.399  INFO 11180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 18:22:56.403  INFO 11180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 18:22:56.404  INFO 11180 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 18:22:56.480  INFO 11180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 18:22:56.484  INFO 11180 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 8.569 seconds (JVM running for 9.919)
+2019-09-21 18:23:11.312  INFO 11180 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-21 18:23:11.312  INFO 11180 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-21 18:23:11.333  INFO 11180 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-09-21 18:57:35.979  INFO 11180 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:57:35.985  INFO 11180 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:57:35.998  INFO 11180 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-21 18:57:36.099  INFO 11180 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-21 18:57:43.001  INFO 6476 --- [main] com.zlx.reverce.ReverceApplication       : Starting ReverceApplication on DESKTOP-64BLO1B with PID 6476 (E:\Projects\IdeaProjects\reserve-server\target\classes started by Hasee in E:\Projects\IdeaProjects\reserve-server)
+2019-09-21 18:57:43.004  INFO 6476 --- [main] com.zlx.reverce.ReverceApplication       : The following profiles are active: dev
+2019-09-21 18:57:44.071  INFO 6476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-21 18:57:44.113  INFO 6476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-09-21 18:57:44.568  INFO 6476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0fb950d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-21 18:57:45.077  INFO 6476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-21 18:57:45.100  INFO 6476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-21 18:57:45.101  INFO 6476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-21 18:57:45.317  INFO 6476 --- [main] o.a.c.c.C.[.[localhost].[/reverce]       : Initializing Spring embedded WebApplicationContext
+2019-09-21 18:57:45.317  INFO 6476 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2256 ms
+2019-09-21 18:57:45.528  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-21 18:57:45.899  INFO 6476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-21 18:57:45.941  INFO 6476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-21 18:57:46.027  INFO 6476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.11.Final}
+2019-09-21 18:57:46.030  INFO 6476 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-21 18:57:46.233  INFO 6476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-21 18:57:46.444  INFO 6476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-21 18:57:46.732  INFO 6476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:57:47.999  WARN 6476 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-21 18:57:48.267  INFO 6476 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-09-21 18:57:48.604  INFO 6476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:57:48.731  INFO 6476 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/system_manager/index.html]
+2019-09-21 18:57:49.106  INFO 6476 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-09-21 18:57:49.126  INFO 6476 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-09-21 18:57:49.164  INFO 6476 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-09-21 18:57:49.272  INFO 6476 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-09-21 18:57:49.273  INFO 6476 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_1
+2019-09-21 18:57:49.277  INFO 6476 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-09-21 18:57:49.279  INFO 6476 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_2
+2019-09-21 18:57:49.283  INFO 6476 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-09-21 18:57:49.284  INFO 6476 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: selectUsingPOST_3
+2019-09-21 18:57:49.635  INFO 6476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/reverce'
+2019-09-21 18:57:49.638  INFO 6476 --- [main] com.zlx.reverce.ReverceApplication       : Started ReverceApplication in 7.824 seconds (JVM running for 9.046)
+2019-09-21 18:58:25.266  INFO 6476 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-21 18:58:25.269  INFO 6476 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-21 18:58:25.272  INFO 6476 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-21 18:58:25.284  INFO 6476 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

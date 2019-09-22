@@ -38,17 +38,19 @@ public class TOrderController {
 
     @PostMapping("/insertOrder")
     Object insertOrder(String reservePhone, String address, String joinNumber, String reserveType, String budget,
-                       Long startDate, Long endDate,String mobileCode) {
+                       Long startDate, Long endDate, String mobileCode) {
         QueryWrapper<TSundryInfo> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("mobile", reservePhone);
-        queryWrapper.eq("mobileCode", mobileCode);
+        queryWrapper.eq("mobile_code", mobileCode);
         TSundryInfo one = itSundryInfoService.getOne(queryWrapper);
         if (one == null) {
             return ReturnUtil.returnFail("请获取验证码");
         }
         Date createTime = one.getCreateTime();
         long between = (new Date().getTime() - createTime.getTime()) / 1000;//秒
-
+        if (between > 5 * 60 * 1000) {
+            return ReturnUtil.returnFail("验证码已过时，请重新获取");
+        }
 
         TOrder tOrder = new TOrder();
         tOrder.setReservePhone(reservePhone);
