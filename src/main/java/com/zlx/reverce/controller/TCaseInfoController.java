@@ -1,8 +1,10 @@
 package com.zlx.reverce.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.zlx.reverce.constant.ReturnUtil;
-import com.zlx.reverce.constant.response.ListResp;
+import com.zlx.reverce.constant.response.CaseResp;
+import com.zlx.reverce.constant.response.common.ListResp;
 import com.zlx.reverce.entity.TCase;
 import com.zlx.reverce.entity.TCaseInfo;
 import com.zlx.reverce.service.ITCaseInfoService;
@@ -11,12 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
- *  前端控制器
+ * 前端控制器
  * </p>
  *
  * @author zlx
@@ -25,6 +29,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/t_case_info/t-case-info")
 public class TCaseInfoController {
+
+    @Autowired
+    ITCaseService itCaseService;
 
     @Autowired
     ITCaseInfoService itCaseInfoService;
@@ -37,6 +44,19 @@ public class TCaseInfoController {
 
     @PostMapping("/select")
     Object select() {
-        return ReturnUtil.returnSuccess(new ListResp<>(itCaseInfoService.list()));
+        List<CaseResp> respList = new ArrayList<>();
+        List<TCase> list = itCaseService.list();
+        for (TCase tCase : list) {
+            String id = tCase.getId();
+            QueryWrapper<TCaseInfo> queryWrapper = new QueryWrapper<>();
+            queryWrapper.eq("case_id", id);
+            List<TCaseInfo> list1 = itCaseInfoService.list(queryWrapper);
+            CaseResp caseResp = new CaseResp();
+            caseResp.setCaseId(id);
+            caseResp.setCaseName(tCase.getCaseName());
+            caseResp.setCaseInfoList(list1);
+            respList.add(caseResp);
+        }
+        return ReturnUtil.returnSuccess(respList);
     }
 }

@@ -1,4 +1,4 @@
-package com.zlx.reverce.constant.response;
+package com.zlx.reverce.constant.response.common;
 
 import java.util.List;
 import java.util.Map;

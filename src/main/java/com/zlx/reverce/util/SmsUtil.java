@@ -20,8 +20,8 @@ public class SmsUtil {
     private static final String TEMP_CODE_NOTIFY = "SMS_174580612";
 
     public static void main(String[] args) {
-        sendSms("17689201170", "phone17689201170");
-//        notify("17689201170","17689201170123");
+//        sendSms("17689201170", "phone17689201170");
+        sendNotify("17689201170","17859731098");
     }
 
     public static String sendSms(String mobile) {
@@ -37,22 +37,24 @@ public class SmsUtil {
 
     /**
      * 短信通知
-     * @param mobile 接收者手机号
+     *
+     * @param mobile        接收者手机号
      * @param purposeMobile 短信内容手机号
      */
-    public static void notify(String mobile, String purposeMobile) {
-        CommonRequest request = initSms(mobile,TEMP_CODE_NOTIFY);
+    public static void sendNotify(String mobile, String purposeMobile) {
+        CommonRequest request = initSmsNotify(mobile, TEMP_CODE_NOTIFY);
         request.putQueryParameter("TemplateParam", "{\"number\":\"" + purposeMobile + "\"}");
         send(request);
     }
 
     /**
      * 发送短信验证码
+     *
      * @param mobile 接收者手机号
-     * @param code 短信验证码
+     * @param code   短信验证码
      */
     private static void sendSms(String mobile, String code) {
-        CommonRequest request = initSms(mobile,TEMP_CODE_CODE);
+        CommonRequest request = initSmsCode(mobile, TEMP_CODE_CODE);
         request.putQueryParameter("TemplateParam", "{\"code\":\"" + code + "\"}");
         send(request);
     }
@@ -71,7 +73,19 @@ public class SmsUtil {
         }
     }
 
-    private static CommonRequest initSms(String mobile,String templateCode) {
+    private static CommonRequest initSmsNotify(String mobile,String templateCode){
+        CommonRequest commonRequest = initSms(mobile, templateCode);
+        commonRequest.putQueryParameter("SignName", "携艇会");
+        return commonRequest;
+    }
+
+    private static CommonRequest initSmsCode(String mobile, String templateCode) {
+        CommonRequest commonRequest = initSms(mobile, templateCode);
+        commonRequest.putQueryParameter("SignName", "second2man");
+        return commonRequest;
+    }
+
+    private static CommonRequest initSms(String mobile, String templateCode) {
         CommonRequest request = new CommonRequest();
         request.setMethod(MethodType.POST);
         request.setDomain("dysmsapi.aliyuncs.com");
@@ -79,7 +93,6 @@ public class SmsUtil {
         request.setAction("SendSms");
         request.putQueryParameter("RegionId", "cn-hangzhou");
         request.putQueryParameter("PhoneNumbers", mobile);
-        request.putQueryParameter("SignName", "second2man");
         request.putQueryParameter("TemplateCode", templateCode);
         return request;
     }

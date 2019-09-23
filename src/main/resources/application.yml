@@ -9,7 +9,7 @@ spring:
     allow-bean-definition-overriding: true
   profiles:
     active:
-      - dev
+      - prod
   resources:
     static-locations: classpath:/META-INF/resources/,classpath:/resources/static/,classpath:/static/,classpath:/static/system_manager/,classpath:/public
 
@@ -23,7 +23,9 @@ mybatis-plus:
     # 逻辑删除配置
     logic-delete-value: 0
     logic-not-delete-value: 1
-#    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+  #    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 swagger:
   enabled: true

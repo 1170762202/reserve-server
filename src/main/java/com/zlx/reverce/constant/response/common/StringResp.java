@@ -1,4 +1,4 @@
-package com.zlx.reverce.constant.response;
+package com.zlx.reverce.constant.response.common;
 
 public class StringResp {
     private String msg;

@@ -1,7 +1,7 @@
 package com.zlx.reverce.handler;
 
 import com.zlx.reverce.constant.ReturnUtil;
-import com.zlx.reverce.constant.response.StringResp;
+import com.zlx.reverce.constant.response.common.StringResp;
 import com.zlx.reverce.exception.RequestLimitException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

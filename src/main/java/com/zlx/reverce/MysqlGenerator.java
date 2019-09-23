@@ -48,7 +48,7 @@ public class MysqlGenerator {
      * RUN THIS
      */
     public static void main(String[] args) {
-        generator("t_sundry_info","t_sundry_info");
+        generator("","t_banner");
     }
 
     private static void generator(String moduleName, String tableName) {
@@ -58,7 +58,7 @@ public class MysqlGenerator {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/src/main/java/mybatis-plus-generator");
+        gc.setOutputDir(projectPath + "/src/main/java/");
 
         gc.setAuthor("zlx");
         gc.setOpen(false);

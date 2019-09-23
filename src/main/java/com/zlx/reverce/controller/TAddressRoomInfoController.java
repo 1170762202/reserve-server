@@ -2,14 +2,13 @@ package com.zlx.reverce.controller;
 
 
 import com.zlx.reverce.constant.ReturnUtil;
-import com.zlx.reverce.constant.response.ListResp;
+import com.zlx.reverce.constant.response.common.ListResp;
 import com.zlx.reverce.entity.TAddressRoomInfo;
 import com.zlx.reverce.service.ITAddressRoomInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 /**

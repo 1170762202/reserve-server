@@ -5,17 +5,21 @@ import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.zlx.reverce.constant.ResponseCode;
 import com.zlx.reverce.constant.ReturnUtil;
-import com.zlx.reverce.constant.response.ListResp;
+import com.zlx.reverce.constant.response.common.ListResp;
+import com.zlx.reverce.entity.TAdminInfo;
 import com.zlx.reverce.entity.TOrder;
 import com.zlx.reverce.entity.TSundryInfo;
+import com.zlx.reverce.service.ITAdminInfoService;
 import com.zlx.reverce.service.ITOrderService;
 import com.zlx.reverce.service.ITSundryInfoService;
+import com.zlx.reverce.util.SmsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -34,6 +38,9 @@ public class TOrderController {
 
     @Autowired
     ITSundryInfoService itSundryInfoService;
+
+    @Autowired
+    ITAdminInfoService itAdminInfoService;
 
 
     @PostMapping("/insertOrder")
@@ -62,12 +69,23 @@ public class TOrderController {
         tOrder.setEndDate(new Date(endDate));
         System.out.println(JSON.toJSONString(tOrder));
         boolean save = itOrderService.save(tOrder);
+        if (save) {
+            List<TAdminInfo> list = itAdminInfoService.list();
+            if (list.size() > 0) {
+                TAdminInfo tAdminInfo = list.get(0);
+                String adminMobile = tAdminInfo.getAdminMobile();
+                SmsUtil.sendNotify(adminMobile, reservePhone);
+            }
+        }
         return ReturnUtil.returnSuccess(save ? ResponseCode.success : ResponseCode.failed);
     }
 
     @PostMapping("/selectAll")
     Object selectAll() {
-        return ReturnUtil.returnSuccess(ResponseCode.success, new ListResp<TOrder>(itOrderService.list()));
+        QueryWrapper<TOrder> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("create_time");
+        return ReturnUtil.returnSuccess(ResponseCode.success,
+                new ListResp<TOrder>(itOrderService.list(queryWrapper)));
     }
 
     @PostMapping("/deleteOrderById")
