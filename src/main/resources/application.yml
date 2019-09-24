@@ -9,7 +9,7 @@ spring:
     allow-bean-definition-overriding: true
   profiles:
     active:
-      - prod
+      - dev
   resources:
     static-locations: classpath:/META-INF/resources/,classpath:/resources/static/,classpath:/static/,classpath:/static/system_manager/,classpath:/public
 

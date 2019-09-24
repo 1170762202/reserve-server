@@ -13,3 +13,8 @@ spring:
     show-sql: true
     generate-ddl: true
     database-platform: org.hibernate.dialect.MySQL5Dialect
+
+# 项目相关配置
+file-service:
+  # 文件路径
+  profile: D:/profile/
