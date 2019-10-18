@@ -66,11 +66,11 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatisplus.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>${mybatisplus.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus</artifactId>-->
+<!--            <version>${mybatisplus.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
@@ -99,11 +99,7 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!--websocket-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-websocket</artifactId>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
         <dependency>
@@ -153,6 +149,21 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
+        </dependency>
+
+
+        <!--压测test-->
+        <dependency>
+            <groupId>org.databene</groupId>
+            <artifactId>contiperf</artifactId>
+            <version>2.3.4</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--websocket-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
         </dependency>
     </dependencies>
 
